@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamidu Nashiru | Web Developer</title>
+
+    <!-- bootstrap icons -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    >
+
+    <!-- Online bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animation On Scoll -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home"
+          ><i class="fas fa-code"></i> Hamidu Nashiru</a
+        >
+
+        <!-- Custom Hamburger Menu -->
+        <button class="navbar-toggler" type="button" id="navToggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#career-timeline">Education</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+            <li class="nav-item download-cv">
+              <a
+                href="Hamidu-Nashiru-CV.pdf"
+                class="btn btn-black nav-lin rounded px-3 py-2 shadow-lg d-inline-flex align-items-center gap-2"
+                download
+              >
+                <i class="bi bi-download"></i> Download CV
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="theme-toggle">
+      <i class="bi bi-sun light-icon"></i>
+      <i class="bi bi-moon dark-icon"></i>
+    </button>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+      <div class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#career-timeline">Education</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <!-- Download CV Button -->
+      <div class="nav-item" id="download-cv">
+        <a href="Hamidu-Nashiru-CV.pdf" class="btn-download" download>
+          <i class="bi bi-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right" data-aos-delay="100">
+            <div class="hero-content">
+              <h1>Hi, I'm Hamidu Nashiru</h1>
+              <p class="subtitle">
+                Frontend Web | Software Developer (<i
+                  class="fas fa-code"
+                  style="color: var(--primary-color)"
+                ></i
+                >)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100">
+            <div class="text-center">
+              <div
+                class="pulse-glow-container"
+                style="
+                  /* width: 250px;
+                  height: 250px; */
+                  background: var(--gradient);
+                  border-radius: 50%;
+                  margin: 0 auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 8rem;
+                  color: white;
+                  opacity: 1;
+                "
+              >
+                <img
+                  class=".pulse-glow-image"
+                  src="./images/3E5A8562.jpg"
+                  alt="Hamidu Nashiru"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                  "
+                />
+
+                <!-- Floating Font Awesome Icons -->
+                <span class="tech-icon icon1"><i class="fas fa-bolt"></i></span>
+                <span class="tech-icon icon2"
+                  ><i class="fas fa-power-off"></i
+                ></span>
+                <span class="tech-icon icon3"
+                  ><i class="fas fa-microchip"></i
+                ></span>
+                <span class="tech-icon icon4"><i class="fas fa-code"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- the moving light element -->
+    <!-- <div class="mouse-light" id="mouseLight" aria-hidden="true"></div> -->
+
+    <div class="glow-btn-container" data-aos="fade-left" data-aos-delay="100">
+      <!-- Green Glow Button -->
+      <button class="status-btn btn-green-glow text-center">
+        <span class="dot" aria-hidden="true"></span>
+        Web Developer
+      </button>
+
+      <!-- Spacing -->
+      <div class="mx-2"></div>
+
+      <!-- Blue Glow Button -->
+      <button class="status-btn btn-blue-glow">
+        <i class="bi bi-calendar-event"></i>
+        Software Developer
+      </button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">About Me</h2>
+        <div class="heading-line"></div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="about-card text-center">
+              <div
+                style="
+                  width: 100px;
+                  height: 100px;
+                  background: var(--gradient);
+                  border: black;
+                  border-radius: 50%;
+                  margin: 0 auto 2rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 4rem;
+                  color: white;
+                "
+              >
+                <i class="fas fa-user"></i>
+              </div>
+
+              <p class="lead mx-auto mb-4">
+                I create fast and user-friendly websites with a focus on
+                accessibility and clean design. I'm learning modern web
+                technologies and building projects that help me grow as a
+                developer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+          <span class="highlight-badge-modern">
+            <i class="fas fa-map-marker-alt text-primary"></i> Ghana
+          </span>
+          <span class="highlight-badge-modern">
+            <i class="fas fa-laptop-code text-warning"></i> JavaScript & Web Dev
+          </span>
+          <span class="highlight-badge-modern">
+            <i class="fas fa-rocket text-success"></i> Growing Portfolio
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Areas of Expertise -->
+    <section class="expertise-section container">
+      <h2><i class="bi bi-lightning-charge text-danger"></i><span class="expertise-title">Areas of Expertise</span></h2>
+      <div class="heading-line"></div>
+      <div class="row g-4">
+        <!-- Frontend Development -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="expertise-card">
+            <i class="fas fa-code text-info"></i>
+            <h5>Frontend Development</h5>
+            <ul class="list-unstyled text-light" data-aos="fade-right">
+              <li class="expertise-items">
+                <i class="fab fa-html5 text-danger me-2"></i> HTML5
+              </li>
+              <li class="expertise-items">
+                <i class="fab fa-css3-alt text-primary me-2"></i> CSS3
+              </li>
+              <li class="expertise-items">
+                <i class="fab fa-bootstrap text-purple me-2"></i> Bootstrap
+              </li>
+              <li class="expertise-items">
+                <i class="fab fa-js-square text-warning me-2"></i> JavaScript
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="expertise-card">
+            <i class="fas fa-laptop-code text-warning"></i>
+            <h5>Programming</h5>
+            <ul class="list-unstyled text-light" data-aos="fade-right">
+              <li class="expertise-items">
+                <i class="fab fa-js text-warning me-2"></i> JavaScript
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Web Tools -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="expertise-card">
+            <i class="fas fa-tools text-success"></i>
+            <h5>Web Tools</h5>
+            <ul class="list-unstyled text-light" data-aos="fade-right">
+              <li class="expertise-items">
+                <i class="fab fa-git-alt text-danger me-2"></i> Git
+              </li>
+              <li class="expertise-items">
+                <i class="fab fa-github text-light me-2"></i> GitHub
+              </li>
+              <li class="expertise-items">
+                <i class="fas fa-code text-primary me-2"></i> VS Code
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Collaboration -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="expertise-card">
+            <i class="fas fa-users text-danger"></i>
+            <h5>Collaboration</h5>
+            <ul class="list-unstyled text-light" data-aos="fade-right">
+              <li class="expertise-items">
+                <i class="fas fa-user-friends text-info me-2"></i> Pair
+                Programming
+              </li>
+              <li class="expertise-items">
+                <i class="fas fa-project-diagram text-warning me-2"></i> Project
+                Collaboration
+              </li>
+              <li class="expertise-items">
+                <i class="fas fa-user-graduate text-success me-2"></i> Mentoring
+              </li>
+              <li class="expertise-items">
+                <i class="fas fa-users text-warning me-2"></i> Teamwork
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Timeline -->
+    <section id="career-timeline" class="section">
+      <div class="container career-timeline">
+        <h2 class="section-title text-center">Career Timeline</h2>
+        <div class="heading-line"></div>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Current Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon education">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-degree">
+                <i class="fas fa-graduation-cap"></i>
+                Bachelor of Science in Computer Science
+              </div>
+              <div class="timeline-school">
+                University for Development Studies
+              </div>
+              <div class="timeline-date">2023 - 2027 (Expected)</div>
+              <div class="timeline-details">
+                <strong>Major Focus:</strong> Web & Software Development<br />
+                <strong>Relevant Coursework:</strong> Data Structures &
+                Algorithms, Database Systems, Computer Application, Operating
+                Systems, Computer Organization
+              </div>
+              <div class="timeline-achievements">
+                <span class="achievement-tag"
+                  >Google Developer Student Club — Active Member</span
+                >
+                <span class="achievement-tag"
+                  >Elected Vice President, Computer Science Association (Serving
+                  Incumbent)</span
+                >
+                <span class="achievement-tag">CS Honor Society</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Internship Experience -->
+          <div class="timeline-item">
+            <div class="timeline-icon work">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-degree">
+                <i class="fas fa-briefcase"></i>
+                Software Development Intern
+              </div>
+              <div class="timeline-school">Technovations Girls</div>
+              <div class="timeline-date">2024</div>
+              <div class="timeline-details">
+                <strong>Role:</strong> Scratch Coding Mentor<br />
+                <strong>Projects:</strong> Developed Mobile App with Scratch<br />
+                <strong>Technologies:</strong> Scratch
+              </div>
+              <div class="timeline-achievements">
+                <span class="achievement-tag">Best Intern Project</span>
+                <span class="achievement-tag"
+                  >Mentored 30 students in basic programming using Scratch</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- High School -->
+          <div class="timeline-item">
+            <div class="timeline-icon school">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-degree">
+                <i class="fas fa-school"></i>
+                High School
+              </div>
+              <div class="timeline-school">Damongo Senior High</div>
+              <div class="timeline-date">2019 - 2022</div>
+              <div class="timeline-details">
+                <strong>Leadership:</strong> Vice Senior Prefect, SRC Executive,
+                WDYK Competition Executive<br />
+                <strong>Achievements:</strong> Excellent Turner of Office, Best
+                Arts Student (2022), Awarded 3rd Position in the WDYK
+                Competition
+              </div>
+              <div class="timeline-achievements">
+                <span class="achievement-tag">Valedictorian</span>
+                <span class="achievement-tag"> Best Student </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="timeline-item">
+            <div class="timeline-icon certification">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-degree">
+                <i class="fas fa-certificate"></i>
+                Professional Certifications
+              </div>
+              <div class="timeline-school">Multiple Platforms</div>
+              <div class="timeline-date">2022 - Present</div>
+              <div class="timeline-details">
+                <strong>SoloLearn:</strong> Introduction to Web Development
+                (HTML5, CSS3) <br />
+                <strong>TechSphere:</strong> Intermediate Web Developer (HTML5,
+                CSS3 & Bootstrap)<br />
+                <strong>FreeCodeCamp:</strong> Advanced Web Developer (HTML5,
+                CSS3 & JavaScript ES6+)
+                <strong> <br />SkillVerifier:</strong> SQL (Expected)
+              </div>
+              <div class="timeline-achievements">
+                <span class="achievement-tag">Web Developer Certified</span>
+                <span class="achievement-tag"
+                  >Creative Genius Award (2024)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="heading-line"></div>
+        <div class="row">
+          <!-- BigNash Data Hub -->
+          <div class="col-lg-4 mb-4">
+            <div class="project-card">
+              <div class="project-img">
+                <div class="category-tag app">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <img src="./images/bignashdatahub.png" alt="BigNash Data Hub" />
+                <div class="frosted-badge">
+                  <i class="fas fa-signal"></i>
+                  <span>Digital Service Provider | 500+ Users</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">BigNash Data Hub</h3>
+                <p>
+                  A trusted e-commerce for mobile data
+                  bundles (MTN, Telecel, AirtelTigo) with instant delivery. Also
+                  provides AFA registration for seamless and affordable
+                  connectivity.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-js"></i> JavaScript</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-react"></i> React.js</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fas fa-database"></i> MySQL</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fas fa-cogs"></i> REST API</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-node-js"></i> Node.js</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://www.bignashdatahub.com"
+                    class="live-demo-btn"  target="_blank"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/bignashtech/bignashdatabub"
+                    class="github-btn disabled-link"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SmileHeartGh -->
+          <div class="col-lg-4 mb-4">
+            <div class="project-card">
+              <div class="project-img">
+                <div class="category-tag ngo">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </div>
+
+                <img src="./images/ophanage.png" alt="SmileHeartGh" />
+                <div class="frosted-badge">
+                  <i class="fas fa-heart"></i>
+                  <span>Transforming Lives with Love & Care</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">SmileHeartGh</h3>
+                <p>
+                  A non-profit platform supporting orphaned and vulnerable
+                  children through education, welfare programs, and family
+                  placement. Built to inspire community-driven impact in Ghana.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-js"></i> JavaScript</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://bignashtech.github.io/smile-heart-gh-orphanage"
+                    class="live-demo-btn" target="_blank"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/bignashtech/smile-heart-gh-orphanage"
+                    class="github-btn"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Etherflow -->
+          <div class="col-lg-4 mb-4">
+            <div class="project-card">
+              <div class="project-img">
+                <div class="category-tag app">
+                  <i class="fab fa-ethereum"></i>
+                </div>
+
+                <img src="./images/Etherflow.png" alt="Web3 Etherflow" />
+                <div class="frosted-badge">
+                  <i class="fab fa-ethereum"></i>
+                  <span>Next-Gen DeFi Platform</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Etherflow</h3>
+                <p>
+                  A decentralized finance (DeFi) web app on Ethereum, offering
+                  staking, swapping, yield farming (up to 15% APY), and
+                  cross-chain asset bridging. Designed for scalability and
+                  strong security.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-js"></i> JavaScript</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://bignashtech.github.io/web3.etherflow.app"
+                    class="live-demo-btn" target="_blank"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/bignashtech/web3.etherflow.app"
+                    class="github-btn"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weather App -->
+          <div class="col-lg-4 mb-4">
+            <div class="project-card">
+              <div class="project-img">
+                <div class="category-tag weather">
+                  <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+
+                <img src="./images/Weatherapp.png" alt="Weather App" />
+                <div class="frosted-badge">
+                  <i class="fas fa-cloud-sun"></i>
+                  <span>Real-Time Weather App</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Weather App</h3>
+                <p>
+                  Beginner-friendly app that fetches real-time weather data
+                  using OpenWeather API. Built to demonstrate DOM manipulation
+                  with responsive UI updates.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-js"></i> JavaScript</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fas fa-cogs"></i> REST API</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://bignashtech.github.io/Basic-Weather-App-Dom-Manupulation/"
+                    class="live-demo-btn" target="_blank"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/bignashtech/Basic-Weather-App-Dom-Manupulation"
+                    class="github-btn" target="_blank"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banking App -->
+          <div class="col-lg-4 mb-4">
+            <div class="project-card">
+              <div class="project-img">
+                <div class="category-tag banking">
+                  <i class="fas fa-university"></i>
+                </div>
+
+                <img src="./images/bankapp.png" alt="Bank App" />
+                <div class="frosted-badge">
+                  <i class="fas fa-university"></i>
+                  <span>Stanbic Banking Web Prototype</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Stanbic Banking Web App</h3>
+                <p>
+                  A responsive web prototype of a banking app. Features include
+                  login forms, loading animations, and dashboard navigation.
+                  Designed as a front-end demo for financial applications.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-js"></i> JavaScript</span
+                  >
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://bignashtech.github.io/Stanbic-Banking-App/"
+                    class="live-demo-btn" target="_blank"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/bignashtech/Stanbic-Banking-App"
+                    class="github-btn"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sneakers Project -->
+          <div class="col-lg-4 mb-4">
+            <div class="project-card">
+              <div class="project-img">
+                <!-- Category Tag -->
+                <div class="category-tag ecom">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <img src="./images/sneakers.png" alt="Card Sneakers" />
+                <div class="frosted-badge">
+                  <i class="fas fa-credit-card"></i>
+                  <span>Modern Sneaker Store</span>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Card Sneakers</h3>
+                <p>
+                  A sleek and static e-commerce platform for sneakers,
+                  designed with modern card-based UI for smooth browsing and
+                  shopping experience.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="tech-tag"
+                    ><i class="fab fa-bootstrap"></i> Bootstrap</span
+                  >
+                </div>
+               <div class="project-buttons">
+                  <a
+                    href="https://bignashtech.github.io/card-sneakers/"
+                    class="live-demo-btn"  target="_blank"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/bignashtech/card-sneakers"
+                    class="github-btn"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="status-btn btn-blue-glow" id="view-more">
+        <i class="fas fa-eye pulse-icon"></i>View More on Github
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <!-- Brand & About Column -->
+            <div class="col col-md-4 mb-4">
+              <div class="footer-section">
+                <div class="footer-brand">Hamidu Nashiru</div>
+                <p class="footer-tagline">
+                  Passionate Computer Science student crafting innovative
+                  digital solutions and pushing the boundaries of technology.
+                </p>
+                <div class="footer-cta">
+                  <a href="#contact" class="btn">
+                    <i class="fas fa-paper-plane me-2"></i>Let's Collaborate
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="col col-md-4 mb-4">
+              <div class="footer-section">
+                <h5>Navigation</h5>
+                <ul class="footer-links">
+                  <li>
+                    <a href="#home"><i class="fas fa-home"></i>Home</a>
+                  </li>
+                  <li>
+                    <a href="#about"><i class="fas fa-user"></i>About</a>
+                  </li>
+
+                  <li>
+                    <a href="#education"
+                      ><i class="fas fa-graduation-cap"></i>Education</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#projects"
+                      ><i class="fas fa-project-diagram"></i>Projects</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="col col-md-4 mb-4">
+              <div class="footer-section">
+                <h5>Get In Touch</h5>
+                <div class="footer-contact-info">
+                  <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hamidunashiru5519@gmail.com</span>
+                  </div>
+                  <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+233 54 240 8856</span>
+                  </div>
+                  <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Tamale, Ghana</span>
+                  </div>
+                  <div class="footer-contact-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Available for Internships</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Stats -->
+          <div class="footer-stats">
+            <div class="footer-stat">
+              <span class="footer-stat-number" data-count="8">0</span>
+              <span class="footer-stat-label">Projects Completed</span>
+            </div>
+            <div class="footer-stat">
+              <span class="footer-stat-number" data-count="6">0</span>
+              <span class="footer-stat-label">Technologies Mastered</span>
+            </div>
+            <div class="footer-stat">
+              <span class="footer-stat-number" data-count="5">0</span>
+              <span class="footer-stat-label">Certifications Earned</span>
+            </div>
+            <div class="footer-stat">
+              <span class="footer-stat-number" data-count="2">0</span>
+              <span class="footer-stat-label">Years of Experience</span>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="footer-social mt-5">
+            <a href="https://github.com/bignashtech" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/hamidu-nashiru" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://x.com/bignash_1" target="_blank" title="Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=100091966791594" target="_blank" title="Twitter">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="mailto:hamidunashiru5519@gmail.com" target="_blank" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <p>&copy; 2025 BigNash Tech. All rights reserved.</p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <p class="mb-0">
+                <small>
+                  Crafted with passion for innovation • Open to opportunities •
+                  <a
+                    href="#contact"
+                    style="color: var(--accent-color); text-decoration: none"
+                    >Let's build something amazing together</a
+                  >
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
